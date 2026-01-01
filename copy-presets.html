@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy-Paste EQ Presets - AutoEQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .preset-card {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid #333;
+        }
+        .preset-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .preset-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ff5500;
+        }
+        .track-count {
+            background: #333;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+        .preset-description {
+            color: #888;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+        .preset-code {
+            background: #0d0d1a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 16px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #e0e0e0;
+            white-space: pre;
+            overflow-x: auto;
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #ff5500;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .copy-btn:hover {
+            background: #ff7733;
+            transform: scale(1.05);
+        }
+        .copy-btn.copied {
+            background: #10b981;
+        }
+        .code-wrapper {
+            position: relative;
+        }
+        .characteristics {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        .char-tag {
+            background: #2a2a4a;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+        .format-note {
+            background: #1a2a1a;
+            border: 1px solid #2a4a2a;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+            color: #8fbc8f;
+        }
+        .format-note h3 {
+            margin: 0 0 8px 0;
+            color: #10b981;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-brand">AutoEQ Dashboard</div>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="clusters.html">Clusters</a>
+            <a href="eq-presets.html">EQ Presets</a>
+            <a href="copy-presets.html" class="active">Copy Presets</a>
+            <a href="tracks.html">All Tracks</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Copy-Paste EQ Presets</h1>
+            <p class="subtitle">EqualizerAPO / Peace format - Click to copy</p>
+        </header>
+
+        <div class="format-note">
+            <h3>Format: EqualizerAPO / Peace / eqMac Parametric</h3>
+            <p>These presets use 10-band parametric EQ with Q=1.41 (standard). Paste directly into EqualizerAPO config, Peace GUI, or any parametric EQ that accepts this format.</p>
+        </div>
+
+        <div id="presets-container">
+            <p style="color: #888;">Loading presets...</p>
+        </div>
+    </main>
+
+    <script>
+        // Frequency bands
+        const FREQUENCIES = [32, 64, 125, 250, 500, 1000, 2000, 4000, 8000, 16000];
+
+        // Generate EqualizerAPO format string
+        function generateAPOFormat(preset) {
+            const settings = preset.eq_settings;
+            const gains = FREQUENCIES.map(f => settings[f] || 0);
+
+            // Calculate preamp (negative of max gain to prevent clipping)
+            const maxGain = Math.max(...gains.filter(g => g > 0), 0);
+            const preamp = maxGain > 0 ? -maxGain : 0;
+
+            let lines = [];
+            lines.push(`Preamp: ${preamp.toFixed(2)} dB`);
+
+            FREQUENCIES.forEach((freq, i) => {
+                const gain = gains[i];
+                lines.push(`Filter ${i + 1}:  ON  PK  Fc ${freq} Hz  Gain ${gain} dB  Q 1.41`);
+            });
+
+            return lines.join('\n');
+        }
+
+        // Copy to clipboard
+        async function copyToClipboard(text, btn) {
+            try {
+                await navigator.clipboard.writeText(text);
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy:', err);
+                btn.textContent = 'Failed';
+            }
+        }
+
+        // Load and render presets
+        async function loadPresets() {
+            try {
+                const response = await fetch('data/eq_presets_detailed.json');
+                const data = await response.json();
+
+                const container = document.getElementById('presets-container');
+                container.innerHTML = '';
+
+                data.presets.forEach((preset, index) => {
+                    const apoFormat = generateAPOFormat(preset);
+                    const card = document.createElement('div');
+                    card.className = 'preset-card';
+                    card.innerHTML = `
+                        <div class="preset-header">
+                            <span class="preset-title">${preset.preset_name}</span>
+                            <span class="track-count">${preset.track_count.toLocaleString()} tracks</span>
+                        </div>
+                        <p class="preset-description">${preset.description}</p>
+                        <div class="characteristics">
+                            ${preset.characteristics.map(c => `<span class="char-tag">${c}</span>`).join('')}
+                        </div>
+                        <div class="code-wrapper">
+                            <button class="copy-btn" onclick="copyToClipboard(\`${apoFormat.replace(/`/g, '\\`')}\`, this)">Copy</button>
+                            <pre class="preset-code">${apoFormat}</pre>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading presets:', error);
+                document.getElementById('presets-container').innerHTML =
+                    '<p style="color: #ff5500;">Error loading presets. Check console for details.</p>';
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadPresets);
+    </script>
+</body>
+</html>

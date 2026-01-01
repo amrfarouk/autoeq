@@ -1,0 +1,408 @@
+{
+  "name": "SoundCloud Auto-EQ Presets",
+  "description": "Auto-generated presets based on SoundCloud likes analysis",
+  "version": "1.0",
+  "generated_at": "2026-01-01T21:21:48.573057",
+  "presets": [
+    {
+      "id": "arabic_classical",
+      "name": "Arabic Classical",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 0
+          },
+          {
+            "frequency": 64,
+            "gain": 1
+          },
+          {
+            "frequency": 125,
+            "gain": 2
+          },
+          {
+            "frequency": 250,
+            "gain": 1
+          },
+          {
+            "frequency": 500,
+            "gain": 1
+          },
+          {
+            "frequency": 1000,
+            "gain": 2
+          },
+          {
+            "frequency": 2000,
+            "gain": 2
+          },
+          {
+            "frequency": 4000,
+            "gain": 3
+          },
+          {
+            "frequency": 8000,
+            "gain": 2
+          },
+          {
+            "frequency": 16000,
+            "gain": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "uncategorized",
+      "name": "Flat / Reference",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 0
+          },
+          {
+            "frequency": 64,
+            "gain": 0
+          },
+          {
+            "frequency": 125,
+            "gain": 0
+          },
+          {
+            "frequency": 250,
+            "gain": 0
+          },
+          {
+            "frequency": 500,
+            "gain": 0
+          },
+          {
+            "frequency": 1000,
+            "gain": 0
+          },
+          {
+            "frequency": 2000,
+            "gain": 0
+          },
+          {
+            "frequency": 4000,
+            "gain": 0
+          },
+          {
+            "frequency": 8000,
+            "gain": 0
+          },
+          {
+            "frequency": 16000,
+            "gain": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "sufi_religious",
+      "name": "Sufi / Vocal Focus",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": -2
+          },
+          {
+            "frequency": 64,
+            "gain": -1
+          },
+          {
+            "frequency": 125,
+            "gain": 0
+          },
+          {
+            "frequency": 250,
+            "gain": 1
+          },
+          {
+            "frequency": 500,
+            "gain": 2
+          },
+          {
+            "frequency": 1000,
+            "gain": 3
+          },
+          {
+            "frequency": 2000,
+            "gain": 3
+          },
+          {
+            "frequency": 4000,
+            "gain": 2
+          },
+          {
+            "frequency": 8000,
+            "gain": 1
+          },
+          {
+            "frequency": 16000,
+            "gain": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "electronic_edm",
+      "name": "Electronic / EDM",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 6
+          },
+          {
+            "frequency": 64,
+            "gain": 5
+          },
+          {
+            "frequency": 125,
+            "gain": 3
+          },
+          {
+            "frequency": 250,
+            "gain": 0
+          },
+          {
+            "frequency": 500,
+            "gain": -1
+          },
+          {
+            "frequency": 1000,
+            "gain": 0
+          },
+          {
+            "frequency": 2000,
+            "gain": 1
+          },
+          {
+            "frequency": 4000,
+            "gain": 2
+          },
+          {
+            "frequency": 8000,
+            "gain": 2
+          },
+          {
+            "frequency": 16000,
+            "gain": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "instrumental",
+      "name": "Instrumental / Ambient",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 0
+          },
+          {
+            "frequency": 64,
+            "gain": 1
+          },
+          {
+            "frequency": 125,
+            "gain": 2
+          },
+          {
+            "frequency": 250,
+            "gain": 1
+          },
+          {
+            "frequency": 500,
+            "gain": 0
+          },
+          {
+            "frequency": 1000,
+            "gain": 1
+          },
+          {
+            "frequency": 2000,
+            "gain": 2
+          },
+          {
+            "frequency": 4000,
+            "gain": 3
+          },
+          {
+            "frequency": 8000,
+            "gain": 2
+          },
+          {
+            "frequency": 16000,
+            "gain": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "arabic_pop",
+      "name": "Arabic Pop",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 2
+          },
+          {
+            "frequency": 64,
+            "gain": 3
+          },
+          {
+            "frequency": 125,
+            "gain": 1
+          },
+          {
+            "frequency": 250,
+            "gain": 0
+          },
+          {
+            "frequency": 500,
+            "gain": 1
+          },
+          {
+            "frequency": 1000,
+            "gain": 2
+          },
+          {
+            "frequency": 2000,
+            "gain": 2
+          },
+          {
+            "frequency": 4000,
+            "gain": 1
+          },
+          {
+            "frequency": 8000,
+            "gain": 1
+          },
+          {
+            "frequency": 16000,
+            "gain": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "world_fusion",
+      "name": "World / Fusion",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 1
+          },
+          {
+            "frequency": 64,
+            "gain": 2
+          },
+          {
+            "frequency": 125,
+            "gain": 1
+          },
+          {
+            "frequency": 250,
+            "gain": 1
+          },
+          {
+            "frequency": 500,
+            "gain": 1
+          },
+          {
+            "frequency": 1000,
+            "gain": 2
+          },
+          {
+            "frequency": 2000,
+            "gain": 2
+          },
+          {
+            "frequency": 4000,
+            "gain": 2
+          },
+          {
+            "frequency": 8000,
+            "gain": 1
+          },
+          {
+            "frequency": 16000,
+            "gain": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "rock_alternative",
+      "name": "Rock / Alternative",
+      "isDefault": false,
+      "gains": {
+        "global": 0,
+        "bands": [
+          {
+            "frequency": 32,
+            "gain": 1
+          },
+          {
+            "frequency": 64,
+            "gain": 3
+          },
+          {
+            "frequency": 125,
+            "gain": 2
+          },
+          {
+            "frequency": 250,
+            "gain": 1
+          },
+          {
+            "frequency": 500,
+            "gain": 0
+          },
+          {
+            "frequency": 1000,
+            "gain": 2
+          },
+          {
+            "frequency": 2000,
+            "gain": 3
+          },
+          {
+            "frequency": 4000,
+            "gain": 2
+          },
+          {
+            "frequency": 8000,
+            "gain": 1
+          },
+          {
+            "frequency": 16000,
+            "gain": 0
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "source": "https://soundcloud.com/amrfarouk75/likes",
+  "total_tracks": 5157,
+  "generated_at": "2026-01-01T21:21:48.573630",
+  "presets": [
+    {
+      "cluster_id": "arabic_classical",
+      "cluster_name": "Arabic Classical / Traditional",
+      "track_count": 2025,
+      "preset_name": "Arabic Classical",
+      "description": "Tailored for traditional Arabic instruments like oud, qanun, and ney. Balances the warm resonance of strings with clear high-end for intricate melodies.",
+      "characteristics": [
+        "Oud resonance enhanced",
+        "Clear ney/qanun",
+        "Warm maqam tones",
+        "Natural dynamics"
+      ],
+      "eq_settings": {
+        "32": 0,
+        "64": 1,
+        "125": 2,
+        "250": 1,
+        "500": 1,
+        "1000": 2,
+        "2000": 2,
+        "4000": 3,
+        "8000": 2,
+        "16000": 1
+      },
+      "sample_tracks": [
+        {
+          "title": "اللي اشترى منك موزنش",
+          "artist": "Mustapha Almashad",
+          "url": "https://soundcloud.com/mustapha-almashad/mcjcqpixhjot"
+        },
+        {
+          "title": "مزجٌ أول - المفروض أعملك ايه ؟!",
+          "artist": "Mahraafat",
+          "url": "https://soundcloud.com/mahraafat/mafroda3mlkeh"
+        },
+        {
+          "title": "دنيا مسعود _ حـلم",
+          "artist": "Greenoha Sobhi",
+          "url": "https://soundcloud.com/greenoha/donia-7elm"
+        }
+      ]
+    },
+    {
+      "cluster_id": "uncategorized",
+      "cluster_name": "Uncategorized",
+      "track_count": 1269,
+      "preset_name": "Flat / Reference",
+      "description": "Neutral preset with minimal adjustment. Use when track type is unknown or for reference listening.",
+      "characteristics": [
+        "Flat response",
+        "Reference quality",
+        "No coloration",
+        "True to source"
+      ],
+      "eq_settings": {
+        "32": 0,
+        "64": 0,
+        "125": 0,
+        "250": 0,
+        "500": 0,
+        "1000": 0,
+        "2000": 0,
+        "4000": 0,
+        "8000": 0,
+        "16000": 0
+      },
+      "sample_tracks": [
+        {
+          "title": "الدنيا تمضي لا محالة للزوال",
+          "artist": "Tabidy",
+          "url": "https://soundcloud.com/user-396594314-425520077/dzgewr7hubyd"
+        },
+        {
+          "title": "والقمر غرب مال جابر الاسناوى-فن الكف",
+          "artist": "Khalid Gohar",
+          "url": "https://soundcloud.com/khalid-gohar/se4bqlsmqrc9"
+        },
+        {
+          "title": "بصوت عمار الشريعى .. حبيبتى من ضفايرها طل القمر",
+          "artist": "Aboel3nen",
+          "url": "https://soundcloud.com/aboel3nen/avz15clpvdks"
+        }
+      ]
+    },
+    {
+      "cluster_id": "sufi_religious",
+      "cluster_name": "Sufi / Religious",
+      "track_count": 891,
+      "preset_name": "Sufi / Vocal Focus",
+      "description": "Optimized for spiritual vocals, Sufi music, and religious chanting. Enhances mid-range clarity for vocals while reducing bass rumble.",
+      "characteristics": [
+        "Vocal-focused",
+        "Enhanced mid-range",
+        "Clear Arabic diction",
+        "Reduced low-end rumble"
+      ],
+      "eq_settings": {
+        "32": -2,
+        "64": -1,
+        "125": 0,
+        "250": 1,
+        "500": 2,
+        "1000": 3,
+        "2000": 3,
+        "4000": 2,
+        "8000": 1,
+        "16000": 0
+      },
+      "sample_tracks": [
+        {
+          "title": "لا تهاجر - الله كبير - أحمد مطر وفيروز",
+          "artist": "Adel Fouad",
+          "url": "https://soundcloud.com/adel-fouad/toskmdtx2eof"
+        },
+        {
+          "title": "تصاعد أنفاسي إليك عِتَابُ - High Quality",
+          "artist": "وَذَكِّرْ (A.Y)",
+          "url": "https://soundcloud.com/ahmed-youssef-007/high-quality"
+        },
+        {
+          "title": "أبو علي - زياد الرحباني 1978",
+          "artist": "Eman El",
+          "url": "https://soundcloud.com/emanel/1978-1"
+        }
+      ]
+    },
+    {
+      "cluster_id": "electronic_edm",
+      "cluster_name": "Electronic / EDM",
+      "track_count": 351,
+      "preset_name": "Electronic / EDM",
+      "description": "Heavy bass, powerful sub-frequencies, and crisp highs for electronic dance music. The drop hits harder.",
+      "characteristics": [
+        "Massive sub-bass",
+        "Powerful drops",
+        "Clear synths",
+        "Club-ready sound"
+      ],
+      "eq_settings": {
+        "32": 6,
+        "64": 5,
+        "125": 3,
+        "250": 0,
+        "500": -1,
+        "1000": 0,
+        "2000": 1,
+        "4000": 2,
+        "8000": 2,
+        "16000": 1
+      },
+      "sample_tracks": [
+        {
+          "title": "Souf (Extended Mix)",
+          "artist": "Shkoon",
+          "url": "https://soundcloud.com/shkoon-music/souf-extended-version"
+        },
+        {
+          "title": "Lana Del Rey, Ludovico Einaudi - Say Yes To Heaven x Experience (Henri PFR Remix)",
+          "artist": "Henri PFR",
+          "url": "https://soundcloud.com/henri-pfr/lana-del-rey-ludovico-einaudi-henri-pfr-remix"
+        },
+        {
+          "title": "Loreena McKennitt – The Mystic's Dream (Zymosis RMX) - Bonus Track - FREE",
+          "artist": "Altar Records (official)",
+          "url": "https://soundcloud.com/altar_records_dj_zen/loreena-mckennitt-the-mystics"
+        }
+      ]
+    },
+    {
+      "cluster_id": "instrumental",
+      "cluster_name": "Instrumental / Ambient",
+      "track_count": 216,
+      "preset_name": "Instrumental / Ambient",
+      "description": "Balanced and natural for acoustic instruments, piano, and ambient music. Minimal coloration, maximum fidelity.",
+      "characteristics": [
+        "Natural tonality",
+        "Acoustic detail",
+        "Wide soundstage",
+        "Minimal coloration"
+      ],
+      "eq_settings": {
+        "32": 0,
+        "64": 1,
+        "125": 2,
+        "250": 1,
+        "500": 0,
+        "1000": 1,
+        "2000": 2,
+        "4000": 3,
+        "8000": 2,
+        "16000": 1
+      },
+      "sample_tracks": [
+        {
+          "title": "Malik Al Sharq - Acoustic Version Hesham Afifi / ملك الشرق - اكوستك فيرجن هشام عفيفي",
+          "artist": "Hesham Afifi",
+          "url": "https://soundcloud.com/ihesham/malik-al-sharq-acoustic-version-hesham-afifi"
+        },
+        {
+          "title": "Gustavo Santaolalla - The Last of Us",
+          "artist": "maaxumka",
+          "url": "https://soundcloud.com/maaxumka/the-last-of-us-3"
+        },
+        {
+          "title": "Clint mansell - Summer overture - Short Remake",
+          "artist": "Yermach",
+          "url": "https://soundcloud.com/alone-man-2/clint-mansell-summer-overture-short-remake"
+        }
+      ]
+    },
+    {
+      "cluster_id": "arabic_pop",
+      "cluster_name": "Arabic Pop / Modern",
+      "track_count": 189,
+      "preset_name": "Arabic Pop",
+      "description": "Modern Arabic pop with punchy bass, clear vocals, and crisp highs. Suitable for contemporary Middle Eastern music.",
+      "characteristics": [
+        "Punchy modern bass",
+        "Clear Arabic vocals",
+        "Radio-friendly",
+        "Contemporary sound"
+      ],
+      "eq_settings": {
+        "32": 2,
+        "64": 3,
+        "125": 1,
+        "250": 0,
+        "500": 1,
+        "1000": 2,
+        "2000": 2,
+        "4000": 1,
+        "8000": 1,
+        "16000": 0
+      },
+      "sample_tracks": [
+        {
+          "title": "يا سلام - ياسمين علي - الحان وجيه عزيز",
+          "artist": "Wagih Aziz",
+          "url": "https://soundcloud.com/wagih-aziz/074942e1-98b7-4bdd-b980-7ee0a659daad"
+        },
+        {
+          "title": "Harir",
+          "artist": "Bedouin Burger",
+          "url": "https://soundcloud.com/bedouinburger/harir"
+        },
+        {
+          "title": "Marc Lavoine - Paris (Vocal Cover)",
+          "artist": "Auk Ilaibô",
+          "url": "https://soundcloud.com/mathias-martin-2/marc-lavoine-paris-vocal-cover"
+        }
+      ]
+    },
+    {
+      "cluster_id": "world_fusion",
+      "cluster_name": "World Music / Fusion",
+      "track_count": 162,
+      "preset_name": "World / Fusion",
+      "description": "Versatile preset for world music with diverse instrumentation. Balances ethnic instruments with modern production.",
+      "characteristics": [
+        "Balanced across genres",
+        "Ethnic instrument clarity",
+        "Modern production support",
+        "Versatile"
+      ],
+      "eq_settings": {
+        "32": 1,
+        "64": 2,
+        "125": 1,
+        "250": 1,
+        "500": 1,
+        "1000": 2,
+        "2000": 2,
+        "4000": 2,
+        "8000": 1,
+        "16000": 1
+      },
+      "sample_tracks": [
+        {
+          "title": "نشيد الإنتفاضة",
+          "artist": "Hiba",
+          "url": "https://soundcloud.com/hypatia2013/wlswyiigv2oq"
+        },
+        {
+          "title": "حب على الطريقة الفلسطينية - كاميليا جبران",
+          "artist": "lamis-kaied",
+          "url": "https://soundcloud.com/lamis-kaied/myycfzhmwk9x"
+        },
+        {
+          "title": "So I Could Find My Way (Enya)",
+          "artist": "Daithí",
+          "url": "https://soundcloud.com/david-garvey-878166855/so-i-could-find-my-way-enya"
+        }
+      ]
+    },
+    {
+      "cluster_id": "rock_alternative",
+      "cluster_name": "Rock / Alternative",
+      "track_count": 54,
+      "preset_name": "Rock / Alternative",
+      "description": "Guitar-focused with punchy drums and clear vocals. Cuts through the mix without being harsh.",
+      "characteristics": [
+        "Guitar-forward",
+        "Punchy drums",
+        "Clear vocals",
+        "Energy without harshness"
+      ],
+      "eq_settings": {
+        "32": 1,
+        "64": 3,
+        "125": 2,
+        "250": 1,
+        "500": 0,
+        "1000": 2,
+        "2000": 3,
+        "4000": 2,
+        "8000": 1,
+        "16000": 0
+      },
+      "sample_tracks": [
+        {
+          "title": "وجيه عزيز - مريت",
+          "artist": "Aliaa Samy 1",
+          "url": "https://soundcloud.com/aliaa-samy-1/us6vwjvvzvuj"
+        },
+        {
+          "title": "عندك مثلاً| Gazaga - عمدان النور",
+          "artist": "Gazaga - عمدان النور",
+          "url": "https://soundcloud.com/gazagaband/3ndk-msln"
+        },
+        {
+          "title": "وجيه عزيز - مريت",
+          "artist": "Aliaa Samy 1",
+          "url": "https://soundcloud.com/aliaa-samy-1/us6vwjvvzvuj"
+        }
+      ]
+    }
+  ]
+}
